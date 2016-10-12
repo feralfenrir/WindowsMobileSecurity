@@ -1,6 +1,7 @@
 # Getting Started with Windows Mobile Security
 
 ## Universal Windows Platform and Universal Apps
+
 <https://msdn.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide>
 
 Windows 10 introduces the Universal Windows Platform (UWP), which further evolves the Windows Runtime model and brings it into the Windows 10 unified core. As part of the core, the UWP now provides a common app platform available on every device that runs Windows 10. With this evolution, apps that target the UWP can call not only the WinRT APIs that are common to all devices, but also APIs (including Win32 and .NET APIs) that are specific to the device family the app is running on. The UWP provides a guaranteed core API layer across devices. This means you can create a single app package that can be installed onto a wide range of devices. And, with that single app package, the Windows Store provides a unified distribution channel to reach all the device types your app can run on.
@@ -14,8 +15,11 @@ The universal device family is special. It is not, directly, the foundation of a
 Each child device family adds its own APIs to the ones it inherits. The resulting union of APIs in a child device family is guaranteed to be present in the OS based on that device family, and on every device running that OS.
 
 ## Interception using Fiddler or Charles
+
 <https://blogs.msdn.microsoft.com/fiddler/2011/12/10/revisiting-fiddler-and-win8-immersive-applications/>
+
 <http://www.thesnoopybub.com/blog/proxy-support-for-metro-apps-in-windows-8/>
+
 <http://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/ConfigureFiddlerForWin8>
 
 UWP applications run inside isolated processes known as “AppContainers.” By default, AppContainers are forbidden from sending network traffic to the local computer (loopback).
@@ -25,6 +29,7 @@ UWP applications run inside isolated processes known as “AppContainers.” By 
 ![alt text](http://thesnoopybub.com/blog/wp-content/uploads/2014/03/enableloopback.png "EnableLoopback utility")
 
 ## Download an app package from Store
+
 <http://woshub.com/how-to-download-appx-installation-file-for-any-windows-store-app/>
 
 - Use Fiddler or Charles
@@ -43,16 +48,20 @@ Local Storage:
 >C:\Users\(username)\AppData\Local\Packages\(package_name)
 
 ## Setting up the UWP test environment
+
 <http://www.c-sharpcorner.com/article/how-to-install-windows-10-sdk-and-windows-10-emulators/>
 
 ### Install VS2015 and Emulators
 - Download Visual Studio 2015 from here:
+
 <https://www.visualstudio.com/downloads/>
+
 - Ensure you check the "Universal Windows App Development Tools" to install the Win10Mobile emulators  and the required libraries
 
 ![alt text](http://csharpcorner.mindcrackerinc.netdna-cdn.com/article/how-to-install-windows-10-sdk-and-windows-10-emulators/Images/image003.png "Universal Windows App Development Tools")
 
 ### Firing up the  Emulators
+
 <http://stackoverflow.com/questions/31493408/how-to-run-the-windows-phone-10-emulator>
 
 The emulators are installed here:
@@ -70,7 +79,9 @@ Note: If  the following folder does not exist, create it.
 Emulators can also be launched from VS2015 by running some test code on an emulator
 
 ### Developer Mode and Device Portal
+
 <https://msdn.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development>
+
 <https://msdn.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal-mobile>
 
 - Enable Developer Mode on your computer
@@ -88,7 +99,9 @@ Emulators can also be launched from VS2015 by running some test code on an emula
 ## Installing applications and Accessing File-system
 
 ### Via WinAppDeployCmd.exe
+
 <https://blogs.windows.com/buildingapps/2015/07/09/just-released-windows-10-application-deployment-tool/>
+
 <https://code.msdn.microsoft.com/windowsapps/UWP-Apps-How-to-instal-d20eb116>
 
 WinAppDeployCmd.exe is available here:
@@ -98,9 +111,10 @@ Install application using the following command:
 `WinAppDeployCmd install -file <Appx file path> -ip <address> -pin <p>`
 
 ### Via Device Portal
+
 <https://msdn.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal>
+
 1. Click browse and find your app package (.appx).
 2. Click browse and find the certificate file (.cer). (Not required on all devices.)
-3. Add dependencies. If you have more than one, add each one individually.
-Under Deploy, click Go.
+3. Add dependencies. If you have more than one, add each one individually. Under Deploy, click Go.
 4. To install another app, click the Reset button to clear the fields.
