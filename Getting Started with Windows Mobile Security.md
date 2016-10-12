@@ -15,12 +15,14 @@ Each child device family adds its own APIs to the ones it inherits. The resultin
 
 ## Interception using Fiddler or Charles
 <https://blogs.msdn.microsoft.com/fiddler/2011/12/10/revisiting-fiddler-and-win8-immersive-applications/>
+<http://www.thesnoopybub.com/blog/proxy-support-for-metro-apps-in-windows-8/>
+<http://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/ConfigureFiddlerForWin8>
 
 UWP applications run inside isolated processes known as “AppContainers.” By default, AppContainers are forbidden from sending network traffic to the local computer (loopback).
 
 **Use the EnableLoopback utility**
 
-![alt text](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/01/37/50/metablogapi/2425.EnableLoopbackUtility_41276413.png "EnableLoopback utility")
+![alt text](http://thesnoopybub.com/blog/wp-content/uploads/2014/03/enableloopback.png "EnableLoopback utility")
 
 ## Download an app package from Store
 <http://woshub.com/how-to-download-appx-installation-file-for-any-windows-store-app/>
