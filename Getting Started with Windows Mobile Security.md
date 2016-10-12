@@ -47,6 +47,7 @@ Local Storage:
 - Download Visual Studio 2015 from here:
 <https://www.visualstudio.com/downloads/>
 - Ensure you check the "Universal Windows App Development Tools" to install the Win10Mobile emulators  and the required libraries
+
 ![alt text](http://csharpcorner.mindcrackerinc.netdna-cdn.com/article/how-to-install-windows-10-sdk-and-windows-10-emulators/Images/image003.png "Universal Windows App Development Tools")
 
 ### Firing up the  Emulators
@@ -71,12 +72,15 @@ Emulators can also be launched from VS2015 by running some test code on an emula
 <https://msdn.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal-mobile>
 
 - Enable Developer Mode on your computer
+
 ![alt text](https://i-msdn.sec.s-msft.com/en-us/windows/uwp/get-started/images/devmode-pc-options.png "Developer Mode on your computer")
 
 - Enable Developer Mode on your mobile/emulator
+
 ![alt text](https://i-msdn.sec.s-msft.com/en-us/windows/uwp/get-started/images/devmode-mob.png "Developer Mode on your mobile/emulator")
 
 - Enable Device Discovery and Device Portal
+
 ![alt text](https://i-msdn.sec.s-msft.com/en-us/windows/uwp/get-started/images/devmode-mob-options.png "Device Discovery and Device Portal")
 
 ## Installing applications and Accessing File-system
